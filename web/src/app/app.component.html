@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row searchLine">
+    <div class="col-2"></div>
+    <div class="col-6">
+      <input type="text" class="form-control" placeholder="введите id">
+    </div>
+    <div class="col-2">
+      <button class="btn btn-outline-secondary" (click)="showCharts()">Поиск</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" *ngIf="showChart">
+      <app-line-chart></app-line-chart>
+    </div>
+  </div>
+</div>
